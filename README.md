@@ -9,4 +9,4 @@ Minker et al. 2025b : https://ui.adsabs.harvard.edu/abs/2025arXiv250713072M/abst
 Vachier et al. 2022 : https://ui.adsabs.harvard.edu/abs/2022Icar..38215013V/abstract
 Ferrais et al. 2022 : https://ui.adsabs.harvard.edu/abs/2022A%26A...662A..71F/abstract
 
-I have all of the processed AO images that produced this dataset, but they are far too massive to include in this repository. If you are interested in the reduce images, please contact me.
+I have all of the processed AO images that produced this dataset, but they are far too massive to include in this repository. If you are interested in the reduced images, please contact me.
