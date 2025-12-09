@@ -1,0 +1,4023 @@
+<?xml version='1.0'?>
+<VOTABLE version="1.4"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 3.4-debian (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2025-06-29T14:22:13
+ !-->
+<RESOURCE>
+<RESOURCE>
+  <COOSYS ID="t1-coosys-1" equinox="J2000" system="ICRS"/>
+</RESOURCE>
+<TABLE name="obs.dat" nrows="135">
+<PARAM arraysize="7" datatype="char" name="ref_system" ucd="meta.note" value="Eugenia">
+<DESCRIPTION>Designation du systeme de reference</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="12" datatype="char" name="obs_target" ucd="meta.note" value="Petit-Prince">
+<DESCRIPTION>Designation de la cible observee</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="2" datatype="char" name="QUERY_STATUS" value="OK"/>
+<PARAM arraysize="28" datatype="char" name="Supplier" value="Provided by IMCCE/OBSPM/CNRS"/>
+<FIELD ID="tjj" datatype="double" name="tjj" ucd="time.epoch" unit="d">
+<DESCRIPTION>Epoch of observation in Julian day</DESCRIPTION>
+</FIELD>
+<FIELD ID="tiso" arraysize="*" datatype="char" name="tiso" ucd="time.epoch" unit="d">
+<DESCRIPTION>Epoch of observation in ISO format</DESCRIPTION>
+</FIELD>
+<FIELD ID="ref_name" arraysize="*" datatype="char" name="ref_name" ucd="meta.note">
+<DESCRIPTION>Name of the observed target</DESCRIPTION>
+</FIELD>
+<FIELD ID="xobs" datatype="double" name="xobs" ref="t1-coosys-1" ucd="pos.cartesian.x;obs" unit="arcsec">
+<DESCRIPTION>Observed x coordinates</DESCRIPTION>
+</FIELD>
+<FIELD ID="yobs" datatype="double" name="yobs" ref="t1-coosys-1" ucd="pos.cartesian.y;obs" unit="arcsec">
+<DESCRIPTION>Observed y coordinates</DESCRIPTION>
+</FIELD>
+<FIELD ID="xobs_err" datatype="double" name="xobs_err" ref="t1-coosys-1" ucd="stat.error;pos.cartesian.x;obs" unit="arcsec">
+<DESCRIPTION>Uncertainty of xobs coordinate</DESCRIPTION>
+</FIELD>
+<FIELD ID="yobs_err" datatype="double" name="yobs_err" ref="t1-coosys-1" ucd="stat.error;pos.cartesian.y;obs" unit="arcsec">
+<DESCRIPTION>Uncertainty of yobs coordinate</DESCRIPTION>
+</FIELD>
+<FIELD ID="xcalc" datatype="double" name="xcalc" ref="t1-coosys-1" ucd="pos.cartesian.x;meta.modelled" unit="arcsec">
+<DESCRIPTION>Computed x coordinates</DESCRIPTION>
+</FIELD>
+<FIELD ID="ycalc" datatype="double" name="ycalc" ref="t1-coosys-1" ucd="pos.cartesian.y;meta.modelled" unit="arcsec">
+<DESCRIPTION>Computed y coordinates</DESCRIPTION>
+</FIELD>
+<FIELD ID="xomc" datatype="double" name="xomc" ref="t1-coosys-1" ucd="stat.error;pos.cartesian.x;meta.modelled" unit="arcsec">
+<DESCRIPTION>Observed minus computed x position (xobs-xcalc)</DESCRIPTION>
+</FIELD>
+<FIELD ID="yomc" datatype="double" name="yomc" ref="t1-coosys-1" ucd="stat.error;pos.cartesian.y;meta.modelled" unit="arcsec">
+<DESCRIPTION>Observed minus computed y position (yobs-ycalc)</DESCRIPTION>
+</FIELD>
+<FIELD ID="timescale" arraysize="*" datatype="char" name="timescale" ucd="meta.note">
+<DESCRIPTION>Time scale of observation (UTC, TT)</DESCRIPTION>
+</FIELD>
+<FIELD ID="centerframe" arraysize="*" datatype="char" name="centerframe" ucd="meta.note">
+<DESCRIPTION>Center of the reference frame (1:heliocentric, 2:geocentric, 3:topocentric, 4:spacecraft)</DESCRIPTION>
+</FIELD>
+<FIELD ID="typeframe" arraysize="*" datatype="char" name="typeframe" ucd="meta.note">
+<DESCRIPTION>Type of frame (1:astrometric J2000, 2:apparent, 3:mean of date, 4:mean J2000)</DESCRIPTION>
+</FIELD>
+<FIELD ID="coordtype" arraysize="*" datatype="char" name="coordtype" ucd="meta.note">
+<DESCRIPTION>Type of coordinates (1:spherical, 2:rectangular)</DESCRIPTION>
+</FIELD>
+<FIELD ID="refframe" arraysize="*" datatype="char" name="refframe" ucd="meta.note">
+<DESCRIPTION>Reference plane (1:equator, 2:ecliptic)</DESCRIPTION>
+</FIELD>
+<FIELD ID="obsuai" arraysize="*" datatype="char" name="obsuai" ucd="meta.note">
+<DESCRIPTION>Observatory IAU code</DESCRIPTION>
+</FIELD>
+<FIELD ID="photom" arraysize="*" datatype="char" name="photom" ucd="phot.flux;meta.note">
+<DESCRIPTION>Photometric method used to obtain x,y measurements</DESCRIPTION>
+</FIELD>
+<FIELD ID="dmag" datatype="double" name="dmag" ucd="phot.mag;em.opt.R;arith.diff" unit="mag">
+<DESCRIPTION>Difference in magnitude between primary and satellite</DESCRIPTION>
+</FIELD>
+<FIELD ID="sigdmag" datatype="double" name="sigdmag" ucd="stat.stdev;phot.mag;em.opt.R" unit="mag">
+<DESCRIPTION>Standard deviation on dmag</DESCRIPTION>
+</FIELD>
+<FIELD ID="quality" arraysize="*" datatype="char" name="quality" ucd="meta.note">
+<DESCRIPTION>Quality note of the measure (A|A+|B|C|D)</DESCRIPTION>
+</FIELD>
+<FIELD ID="telescope" arraysize="*" datatype="char" name="telescope" ucd="meta.note">
+<DESCRIPTION>Telescope used to acquire the measure</DESCRIPTION>
+</FIELD>
+<FIELD ID="camera" arraysize="*" datatype="char" name="camera" ucd="meta.note">
+<DESCRIPTION>Camera used to acquire the measure</DESCRIPTION>
+</FIELD>
+<FIELD ID="filter" arraysize="*" datatype="char" name="filter" ucd="meta.note">
+<DESCRIPTION>Filter used to acquire the measure</DESCRIPTION>
+</FIELD>
+<FIELD ID="author" arraysize="*" datatype="char" name="author" ucd="meta.note">
+<DESCRIPTION>Name of the person who measured the image</DESCRIPTION>
+</FIELD>
+<FIELD ID="when" arraysize="*" datatype="char" name="when" ucd="meta.note">
+<DESCRIPTION>Epoch at which the image was measured the last time (ISO format)</DESCRIPTION>
+</FIELD>
+<FIELD ID="bibitem" arraysize="*" datatype="char" name="bibitem" ucd="meta.note">
+<DESCRIPTION>Bibliographic reference</DESCRIPTION>
+</FIELD>
+<DATA>
+<TABLEDATA>
+  <TR>
+    <TD>2452545.992092824</TD>
+    <TD>2002-09-28T11:48:36.820</TD>
+    <TD>Eugenia</TD>
+    <TD>0.3185</TD>
+    <TD>0.7265</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.2899992406491362</TD>
+    <TD>0.7463563777713852</TD>
+    <TD>0.028500759350863825</TD>
+    <TD>-0.01985637777138516</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>7.83</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:39:26</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452545.989469329</TD>
+    <TD>2002-09-28T11:44:50.150</TD>
+    <TD>Eugenia</TD>
+    <TD>0.3096</TD>
+    <TD>0.7225</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.2901094675461154</TD>
+    <TD>0.7462709259725557</TD>
+    <TD>0.0194905324538846</TD>
+    <TD>-0.0237709259725557</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.57</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:39:02</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452545.9648167826</TD>
+    <TD>2002-09-28T11:09:20.170</TD>
+    <TD>Eugenia</TD>
+    <TD>0.2896</TD>
+    <TD>0.7235</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.29097275740608863</TD>
+    <TD>0.7450225072821295</TD>
+    <TD>-0.0013727574060886094</TD>
+    <TD>-0.021522507282129455</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>9.08</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:38:19</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452545.957740278</TD>
+    <TD>2002-09-28T10:59:08.760</TD>
+    <TD>Eugenia</TD>
+    <TD>0.2996</TD>
+    <TD>0.7237</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.2911628871292266</TD>
+    <TD>0.7445155353420729</TD>
+    <TD>0.008437112870773367</TD>
+    <TD>-0.02081553534207292</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.95</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:37:46</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452539.0889878473</TD>
+    <TD>2002-09-21T14:08:08.550</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.3035</TD>
+    <TD>-0.7083</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.2672310340450914</TD>
+    <TD>-0.7122049744992097</TD>
+    <TD>-0.03626896595490858</TD>
+    <TD>0.003904974499209679</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.4</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:36:47</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452154.8761984953</TD>
+    <TD>2001-09-02T09:01:43.550</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.4929</TD>
+    <TD>0.6316</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.531730928137432</TD>
+    <TD>0.6324721413176946</TD>
+    <TD>0.03883092813743194</TD>
+    <TD>-8.721413176945303E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>8.58</TD>
+    <TD>0.42</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-07 01:20:38</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452154.774128704</TD>
+    <TD>2001-09-02T06:34:44.720</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.5491</TD>
+    <TD>0.6045</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.6197991451189346</TD>
+    <TD>0.5760654680286618</TD>
+    <TD>0.0706991451189346</TD>
+    <TD>0.028434531971338273</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>8.16</TD>
+    <TD>0.2</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-31 09:33:16</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451598.1120086806</TD>
+    <TD>2000-02-23T14:41:17.550</TD>
+    <TD>Eugenia</TD>
+    <TD>0.543</TD>
+    <TD>-0.6432</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.4573103921506848</TD>
+    <TD>-0.6451221077050241</TD>
+    <TD>0.08568960784931523</TD>
+    <TD>0.0019221077050241009</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>8.33</TD>
+    <TD>0.46</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-07 01:17:09</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451598.0484979167</TD>
+    <TD>2000-02-23T13:09:50.220</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5394</TD>
+    <TD>-0.6388</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.44429113709248097</TD>
+    <TD>-0.701999046142755</TD>
+    <TD>0.09510886290751902</TD>
+    <TD>0.06319904614275496</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>7.97</TD>
+    <TD>0.45</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-07 01:16:30</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.9372400464</TD>
+    <TD>2000-02-23T10:29:37.540</TD>
+    <TD>Eugenia</TD>
+    <TD>0.4935</TD>
+    <TD>-0.729</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.4139509454506193</TD>
+    <TD>-0.7892825745155527</TD>
+    <TD>0.07954905454938072</TD>
+    <TD>0.060282574515552745</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>7.41</TD>
+    <TD>0.55</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-07 01:15:18</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.915108796</TD>
+    <TD>2000-02-23T09:57:45.400</TD>
+    <TD>Eugenia</TD>
+    <TD>0.4682</TD>
+    <TD>-0.8053</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.40681872355588033</TD>
+    <TD>-0.8046333740589199</TD>
+    <TD>0.06138127644411967</TD>
+    <TD>-6.666259410801345E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>7.36</TD>
+    <TD>0.17</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-07 01:14:41</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.9110438656</TD>
+    <TD>2000-02-23T09:51:54.190</TD>
+    <TD>Eugenia</TD>
+    <TD>0.4387</TD>
+    <TD>-0.7708</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.40547048611195685</TD>
+    <TD>-0.8073772206475284</TD>
+    <TD>0.03322951388804313</TD>
+    <TD>0.03657722064752833</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>6.28</TD>
+    <TD>0.67</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>K            #6315</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-07 01:14:07</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.8735225694</TD>
+    <TD>2000-02-23T08:57:52.350</TD>
+    <TD>Eugenia</TD>
+    <TD>0.4546</TD>
+    <TD>-0.7666</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.39247529444536483</TD>
+    <TD>-0.831575620599676</TD>
+    <TD>0.06212470555463517</TD>
+    <TD>0.0649756205996761</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>6.79</TD>
+    <TD>0.35</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>J            #6108</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-07 01:12:59</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.8269599536</TD>
+    <TD>2000-02-23T07:50:49.340</TD>
+    <TD>Eugenia</TD>
+    <TD>0.4696</TD>
+    <TD>-0.7657</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.3750044624260698</TD>
+    <TD>-0.858709499116826</TD>
+    <TD>0.09459553757393024</TD>
+    <TD>0.09300949911682599</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>7.13</TD>
+    <TD>0.39</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-28 10:48:20</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.7500064815</TD>
+    <TD>2000-02-23T06:00:00.560</TD>
+    <TD>Eugenia</TD>
+    <TD>0.4598</TD>
+    <TD>-0.7871</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.34304128251344046</TD>
+    <TD>-0.8962697260824103</TD>
+    <TD>0.11675871748655953</TD>
+    <TD>0.10916972608241027</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>7.31</TD>
+    <TD>0.16</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-31 09:25:18</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.0426605325</TD>
+    <TD>2000-02-22T13:01:25.870</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.161</TD>
+    <TD>-0.8599</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.06304542187350275</TD>
+    <TD>-0.7870275302604655</TD>
+    <TD>-0.09795457812649726</TD>
+    <TD>-0.07287246973953454</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>7.68</TD>
+    <TD>0.0</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>Kprime       #6308</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-31 09:24:33</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.0284543983</TD>
+    <TD>2000-02-22T12:40:58.460</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.1765</TD>
+    <TD>-0.8031</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.07187530911286855</TD>
+    <TD>-0.7767526439304998</TD>
+    <TD>-0.10462469088713144</TD>
+    <TD>-0.026347356069500227</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>10.16</TD>
+    <TD>0.36</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-28 10:47:35</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.0163703705</TD>
+    <TD>2000-02-22T12:23:34.400</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.1746</TD>
+    <TD>-0.7813</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.07936441354985839</TD>
+    <TD>-0.7677939054554829</TD>
+    <TD>-0.09523558645014162</TD>
+    <TD>-0.013506094544517122</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>8.39</TD>
+    <TD>1.01</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>Kprime       #6308</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-28 10:47:11</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451596.922014815</TD>
+    <TD>2000-02-22T10:07:42.080</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.2246</TD>
+    <TD>-0.7248</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.13693209949439755</TD>
+    <TD>-0.6912059776488232</TD>
+    <TD>-0.08766790050560244</TD>
+    <TD>-0.03359402235117681</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>9.34</TD>
+    <TD>0.78</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-31 09:22:25</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451596.8971738424</TD>
+    <TD>2000-02-22T09:31:55.820</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.2094</TD>
+    <TD>-0.7182</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.15174984446656686</TD>
+    <TD>-0.6691813626737807</TD>
+    <TD>-0.05765015553343314</TD>
+    <TD>-0.04901863732621925</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>9.23</TD>
+    <TD>0.59</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-31 09:21:33</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451596.8811140046</TD>
+    <TD>2000-02-22T09:08:48.250</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.2358</TD>
+    <TD>-0.7223</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.16123884832277788</TD>
+    <TD>-0.654552357269447</TD>
+    <TD>-0.07456115167722213</TD>
+    <TD>-0.067747642730553</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>9.25</TD>
+    <TD>1.64</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-31 09:20:42</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451182.756619097</TD>
+    <TD>1999-01-04T06:09:31.890</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.3061</TD>
+    <TD>-0.7161</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.4083739068920096</TD>
+    <TD>-0.6864122624960629</TD>
+    <TD>0.1022739068920096</TD>
+    <TD>-0.02968773750393705</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>8.11</TD>
+    <TD>0.42</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>J            #6108</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-18 11:32:20</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451182.7072185185</TD>
+    <TD>1999-01-04T04:58:23.680</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.3538</TD>
+    <TD>-0.7117</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.4378454953163669</TD>
+    <TD>-0.670266090418593</TD>
+    <TD>0.0840454953163669</TD>
+    <TD>-0.041433909581407025</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>9.19</TD>
+    <TD>1.11</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>K</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-18 11:30:10</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451128.134260185</TD>
+    <TD>1998-11-10T15:13:20.080</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5584</TD>
+    <TD>0.4357</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.6657180098541322</TD>
+    <TD>0.387460780252568</TD>
+    <TD>-0.1073180098541322</TD>
+    <TD>0.04823921974743195</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>6.02</TD>
+    <TD>0.53</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-18 11:33:42</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451125.1206443287</TD>
+    <TD>1998-11-07T14:53:43.670</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.4948</TD>
+    <TD>0.1752</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.5676998809927156</TD>
+    <TD>0.19817524328327393</TD>
+    <TD>0.0728998809927156</TD>
+    <TD>-0.02297524328327394</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.89</TD>
+    <TD>0.07</TD>
+    <TD>D</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-31 09:19:31</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451125.0634138887</TD>
+    <TD>1998-11-07T13:31:18.960</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.5044</TD>
+    <TD>0.2321</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>-0.53642162374219</TD>
+    <TD>0.24784185495963332</TD>
+    <TD>0.032021623742190086</TD>
+    <TD>-0.015741854959633317</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.94</TD>
+    <TD>1.75</TD>
+    <TD>C</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-28 10:43:03</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451124.152123611</TD>
+    <TD>1998-11-06T15:39:03.480</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1645</TD>
+    <TD>0.7342</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.21529514896525254</TD>
+    <TD>0.6860658024447012</TD>
+    <TD>-0.05079514896525253</TD>
+    <TD>0.0481341975552988</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>6.85</TD>
+    <TD>0.11</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-31 09:16:41</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451124.1463453704</TD>
+    <TD>1998-11-06T15:30:44.240</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1678</TD>
+    <TD>0.727</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.22030243215823517</TD>
+    <TD>0.685958587651182</TD>
+    <TD>-0.05250243215823516</TD>
+    <TD>0.041041412348817974</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>6.9</TD>
+    <TD>0.29</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>J            #6108</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-31 09:16:03</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451124.0433210647</TD>
+    <TD>1998-11-06T13:02:22.940</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1675</TD>
+    <TD>0.7291</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.30708129757349956</TD>
+    <TD>0.6772011442060266</TD>
+    <TD>-0.13958129757349955</TD>
+    <TD>0.05189885579397335</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>7.29</TD>
+    <TD>0.17</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>K</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-31 09:17:32</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451124.0270476853</TD>
+    <TD>1998-11-06T12:38:56.920</TD>
+    <TD>Eugenia</TD>
+    <TD>0.2084</TD>
+    <TD>0.7335</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.32029471830528855</TD>
+    <TD>0.6746386465205835</TD>
+    <TD>-0.11189471830528855</TD>
+    <TD>0.05886135347941657</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>7.39</TD>
+    <TD>0.14</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-31 09:13:59</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452980.02972037</TD>
+    <TD>2003-12-06T12:42:47.840</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.6426</TD>
+    <TD>0.4237</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.6519565310825791</TD>
+    <TD>0.38372179057558536</TD>
+    <TD>0.009356531082579167</TD>
+    <TD>0.03997820942441466</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>8.14</TD>
+    <TD>0.03</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 08:54:51</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452980.097329282</TD>
+    <TD>2003-12-06T14:20:09.250</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.6702</TD>
+    <TD>0.3461</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.6836927195705329</TD>
+    <TD>0.3373286658681424</TD>
+    <TD>0.013492719570532885</TD>
+    <TD>0.0087713341318576</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>9.13</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:39:57</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452991.0713344906</TD>
+    <TD>2003-12-17T13:42:43.300</TD>
+    <TD>Eugenia</TD>
+    <TD>0.0519</TD>
+    <TD>-0.6975</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.05366733776657604</TD>
+    <TD>-0.6664582638629015</TD>
+    <TD>-0.0017673377665760395</TD>
+    <TD>-0.031041736137098486</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>9.97</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:40:19</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453008.7943677083</TD>
+    <TD>2004-01-04T07:03:53.370</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.8486</TD>
+    <TD>-0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.85959182836761</TD>
+    <TD>-0.027921933426831615</TD>
+    <TD>0.010991828367609924</TD>
+    <TD>0.014621933426831615</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.1</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:40:34</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453009.747241551</TD>
+    <TD>2004-01-05T05:56:01.670</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.1326</TD>
+    <TD>-0.7294</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.13773393415034751</TD>
+    <TD>-0.6910598266028384</TD>
+    <TD>0.005133934150347519</TD>
+    <TD>-0.03834017339716167</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>8.9</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:40:49</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453010.715509954</TD>
+    <TD>2004-01-06T05:10:20.060</TD>
+    <TD>Eugenia</TD>
+    <TD>0.7847</TD>
+    <TD>-0.4053</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.7906621105810363</TD>
+    <TD>-0.3660974831359746</TD>
+    <TD>-0.005962110581036351</TD>
+    <TD>-0.03920251686402537</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.76</TD>
+    <TD>0.02</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:00:43</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453046.6328609954</TD>
+    <TD>2004-02-11T03:11:19.190</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.8313</TD>
+    <TD>-0.1959</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.8441393084415402</TD>
+    <TD>-0.20735806686231487</TD>
+    <TD>0.012839308441540132</TD>
+    <TD>0.011458066862314875</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.76</TD>
+    <TD>0.04</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:01:14</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453046.6389421294</TD>
+    <TD>2004-02-11T03:20:04.600</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.8354</TD>
+    <TD>-0.1988</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.8418350060955674</TD>
+    <TD>-0.21274506708398294</TD>
+    <TD>0.006435006095567353</TD>
+    <TD>0.013945067083982937</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>10.07</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:41:18</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453047.619842824</TD>
+    <TD>2004-02-12T02:52:34.420</TD>
+    <TD>Eugenia</TD>
+    <TD>0.0663</TD>
+    <TD>-0.7293</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.05752947802138649</TD>
+    <TD>-0.6931279769658443</TD>
+    <TD>0.008770521978613506</TD>
+    <TD>-0.036172023034155676</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.07</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:41:34</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453047.6256136573</TD>
+    <TD>2004-02-12T03:00:53.020</TD>
+    <TD>Eugenia</TD>
+    <TD>0.0803</TD>
+    <TD>-0.7415</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.06433570456991124</TD>
+    <TD>-0.6928233872525045</TD>
+    <TD>0.01596429543008876</TD>
+    <TD>-0.04867661274749557</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.06</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:41:52</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453047.6476746527</TD>
+    <TD>2004-02-12T03:32:39.090</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1063</TD>
+    <TD>-0.7294</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.09031342458871451</TD>
+    <TD>-0.6912793727296929</TD>
+    <TD>0.015986575411285495</TD>
+    <TD>-0.038120627270307184</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.23</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>J</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:42:04</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453047.673541435</TD>
+    <TD>2004-02-12T04:09:53.980</TD>
+    <TD>Eugenia</TD>
+    <TD>0.136</TD>
+    <TD>-0.7249</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.1206657118031858</TD>
+    <TD>-0.6887041874286733</TD>
+    <TD>0.015334288196814205</TD>
+    <TD>-0.03619581257132665</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.78</TD>
+    <TD>0.04</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:10:37</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453065.6691613426</TD>
+    <TD>2004-03-01T04:03:35.540</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.6722</TD>
+    <TD>-0.3537</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.6968750319678886</TD>
+    <TD>-0.3530663685825007</TD>
+    <TD>0.02467503196788856</TD>
+    <TD>-6.336314174993363E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>8.62</TD>
+    <TD>0.09</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:10:49</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453067.673872685</TD>
+    <TD>2004-03-03T04:10:22.600</TD>
+    <TD>Eugenia</TD>
+    <TD>0.8328</TD>
+    <TD>0.052</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.8166664316411798</TD>
+    <TD>0.07575032768605795</TD>
+    <TD>0.016133568358820183</TD>
+    <TD>-0.023750327686057955</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.6</TD>
+    <TD>0.03</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:11:19</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453068.648361111</TD>
+    <TD>2004-03-04T03:33:38.400</TD>
+    <TD>Eugenia</TD>
+    <TD>0.136</TD>
+    <TD>0.6426</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.1308198905999269</TD>
+    <TD>0.6226700250667867</TD>
+    <TD>0.005180109400073102</TD>
+    <TD>0.019929974933213246</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.74</TD>
+    <TD>0.03</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:11:31</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453068.6578627313</TD>
+    <TD>2004-03-04T03:47:19.340</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1433</TD>
+    <TD>0.6388</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.1205600010160512</TD>
+    <TD>0.6237754326552909</TD>
+    <TD>0.02273999898394881</TD>
+    <TD>0.015024567344709139</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>10.25</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:42:39</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453071.6370269675</TD>
+    <TD>2004-03-07T03:17:19.130</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5289</TD>
+    <TD>-0.5066</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.5089297683579265</TD>
+    <TD>-0.4751526104477237</TD>
+    <TD>0.019970231642073566</TD>
+    <TD>-0.03144738955227633</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.91</TD>
+    <TD>0.03</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:11:58</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453071.6463197917</TD>
+    <TD>2004-03-07T03:30:42.030</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5388</TD>
+    <TD>-0.5032</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.5166215310545585</TD>
+    <TD>-0.470165457764601</TD>
+    <TD>0.0221784689454414</TD>
+    <TD>-0.03303454223539898</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>8.28</TD>
+    <TD>0.04</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:12:09</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453072.539052083</TD>
+    <TD>2004-03-08T00:56:14.100</TD>
+    <TD>Eugenia</TD>
+    <TD>0.7694</TD>
+    <TD>0.1761</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.7628371050155607</TD>
+    <TD>0.19945335123218472</TD>
+    <TD>0.006562894984439294</TD>
+    <TD>-0.02335335123218471</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>8.14</TD>
+    <TD>0.06</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:12:21</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453072.5461542825</TD>
+    <TD>2004-03-08T01:06:27.730</TD>
+    <TD>Eugenia</TD>
+    <TD>0.7558</TD>
+    <TD>0.1725</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.7604066667326633</TD>
+    <TD>0.20496914108715125</TD>
+    <TD>-0.0046066667326633</TD>
+    <TD>-0.032469141087151265</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.88</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:43:01</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453073.589828472</TD>
+    <TD>2004-03-09T02:09:21.180</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.1194</TD>
+    <TD>0.6232</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.11902877258334314</TD>
+    <TD>0.6050144916585378</TD>
+    <TD>-3.7122741665686354E-4</TD>
+    <TD>0.018185508341462153</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>8.58</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:43:16</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453074.560115278</TD>
+    <TD>2004-03-10T01:26:33.960</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.7757</TD>
+    <TD>0.0909</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.7892559117981884</TD>
+    <TD>0.07062391012239168</TD>
+    <TD>0.013555911798188491</TD>
+    <TD>0.020276089877608316</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.68</TD>
+    <TD>0.04</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:14:33</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453075.526017014</TD>
+    <TD>2004-03-11T00:37:27.870</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.297</TD>
+    <TD>-0.5847</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.31661069036135975</TD>
+    <TD>-0.5588869946039773</TD>
+    <TD>0.01961069036135976</TD>
+    <TD>-0.025813005396022715</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>8.17</TD>
+    <TD>0.12</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:14:45</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453076.5730719906</TD>
+    <TD>2004-03-12T01:45:13.420</TD>
+    <TD>Eugenia</TD>
+    <TD>0.6722</TD>
+    <TD>-0.3609</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.6563137901134289</TD>
+    <TD>-0.3260465110205254</TD>
+    <TD>0.01588620988657108</TD>
+    <TD>-0.0348534889794746</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>8.05</TD>
+    <TD>0.08</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:14:57</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453160.780576389</TD>
+    <TD>2004-06-04T06:44:01.800</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1974</TD>
+    <TD>-0.4816</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.18551318862879598</TD>
+    <TD>-0.4242536035485928</TD>
+    <TD>0.011886811371204009</TD>
+    <TD>-0.057346396451407156</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>9.41</TD>
+    <TD>1.19</TD>
+    <TD>B</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:43:54</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453386.126800926</TD>
+    <TD>2005-01-15T15:02:35.600</TD>
+    <TD>Eugenia</TD>
+    <TD>0.2295</TD>
+    <TD>-0.5371</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.2752070169799921</TD>
+    <TD>-0.5169859998044408</TD>
+    <TD>-0.045707016979992104</TD>
+    <TD>-0.0201140001955592</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>10.0</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:44:19</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453568.8095530095</TD>
+    <TD>2005-07-17T07:25:45.380</TD>
+    <TD>Eugenia</TD>
+    <TD>0.3184</TD>
+    <TD>0.0897</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.3456381311900358</TD>
+    <TD>0.11914446315423122</TD>
+    <TD>-0.027238131190035764</TD>
+    <TD>-0.029444463154231215</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.19</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:44:35</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453951.088641551</TD>
+    <TD>2006-08-03T14:07:38.630</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1393</TD>
+    <TD>-0.6467</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.1009431358455413</TD>
+    <TD>-0.6240401063184554</TD>
+    <TD>0.0383568641544587</TD>
+    <TD>-0.02265989368154464</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>9.07</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:44:55</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454353.105456713</TD>
+    <TD>2007-09-09T14:31:51.460</TD>
+    <TD>Eugenia</TD>
+    <TD>0.4081</TD>
+    <TD>0.229</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.44038457616791193</TD>
+    <TD>0.22305975418836554</TD>
+    <TD>-0.032284576167911916</TD>
+    <TD>0.005940245811634465</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>9.21</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:45:17</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454353.139471412</TD>
+    <TD>2007-09-09T15:20:50.330</TD>
+    <TD>Eugenia</TD>
+    <TD>0.408</TD>
+    <TD>0.2588</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.4396998110463826</TD>
+    <TD>0.2442034594760098</TD>
+    <TD>-0.03169981104638264</TD>
+    <TD>0.014596540523990176</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.93</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:45:35</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454393.0039634258</TD>
+    <TD>2007-10-19T12:05:42.440</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.5573</TD>
+    <TD>-0.1791</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.5686048885303284</TD>
+    <TD>-0.16075830022500698</TD>
+    <TD>0.011304888530328405</TD>
+    <TD>-0.01834169977499303</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>9.0</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:45:53</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454393.037954514</TD>
+    <TD>2007-10-19T12:54:39.270</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.5573</TD>
+    <TD>-0.209</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.5711231844929195</TD>
+    <TD>-0.1886636563577442</TD>
+    <TD>0.013823184492919527</TD>
+    <TD>-0.020336343642255783</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>9.25</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:46:10</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454393.0624936344</TD>
+    <TD>2007-10-19T13:29:59.450</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.5672</TD>
+    <TD>-0.2289</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.5722103121394889</TD>
+    <TD>-0.20857870448167265</TD>
+    <TD>0.005010312139488882</TD>
+    <TD>-0.020321295518327342</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.67</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:46:30</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454405.871000463</TD>
+    <TD>2007-11-01T08:54:14.440</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1208</TD>
+    <TD>0.6781</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.1369416690794211</TD>
+    <TD>0.6758440046575773</TD>
+    <TD>-0.016141669079421092</TD>
+    <TD>0.002255995342422712</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>8.15</TD>
+    <TD>0.04</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:19:40</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454405.917807176</TD>
+    <TD>2007-11-01T10:01:38.540</TD>
+    <TD>Eugenia</TD>
+    <TD>0.0879</TD>
+    <TD>0.6736</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.09982839654438178</TD>
+    <TD>0.6684813538741208</TD>
+    <TD>-0.01192839654438177</TD>
+    <TD>0.0051186461258792</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>7.58</TD>
+    <TD>0.02</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:19:52</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454447.829725463</TD>
+    <TD>2007-12-13T07:54:48.280</TD>
+    <TD>Eugenia</TD>
+    <TD>0.438</TD>
+    <TD>0.7065</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.4526045274250368</TD>
+    <TD>0.7114836633136704</TD>
+    <TD>-0.014604527425036817</TD>
+    <TD>-0.0049836633136703945</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>9.4</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:47:05</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454989.833956829</TD>
+    <TD>2009-06-07T08:00:53.870</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.2788</TD>
+    <TD>0.6469</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.28730934108750267</TD>
+    <TD>0.6573064280816425</TD>
+    <TD>0.008509341087502675</TD>
+    <TD>-0.010406428081642494</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.53</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:47:29</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454989.836934259</TD>
+    <TD>2009-06-07T08:05:11.120</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.2789</TD>
+    <TD>0.6469</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.2889473124599275</TD>
+    <TD>0.6571895109729795</TD>
+    <TD>0.010047312459927515</TD>
+    <TD>-0.010289510972979476</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.6</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:47:40</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455344.1006810185</TD>
+    <TD>2010-05-27T14:24:58.840</TD>
+    <TD>Eugenia</TD>
+    <TD>0.8153</TD>
+    <TD>-0.051</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.8304927993881291</TD>
+    <TD>-0.026362221942998594</TD>
+    <TD>-0.015192799388129119</TD>
+    <TD>-0.024637778057001403</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>9.99</TD>
+    <TD>1.2</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>J</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:48:24</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455375.911741435</TD>
+    <TD>2010-06-28T09:52:54.460</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1792</TD>
+    <TD>0.7963</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.18185445672215134</TD>
+    <TD>0.8119798602880131</TD>
+    <TD>-0.002654456722151338</TD>
+    <TD>-0.015679860288013048</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.05</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>PK50_1.5 + FeII</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:48:43</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455375.986422801</TD>
+    <TD>2010-06-28T11:40:26.930</TD>
+    <TD>Eugenia</TD>
+    <TD>0.2763</TD>
+    <TD>0.7869</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.27626504006503094</TD>
+    <TD>0.8015512886055466</TD>
+    <TD>3.49599349690477E-5</TD>
+    <TD>-0.014651288605546542</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.38</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>PK50_1.5 + FeII</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:49:04</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455423.8259467594</TD>
+    <TD>2010-08-15T07:49:21.800</TD>
+    <TD>Eugenia</TD>
+    <TD>0.9196</TD>
+    <TD>0.2187</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.9173807695816463</TD>
+    <TD>0.26015232159718726</TD>
+    <TD>0.0022192304183537015</TD>
+    <TD>-0.04145232159718726</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>4.47</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:49:19</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455423.8288373845</TD>
+    <TD>2010-08-15T07:53:31.550</TD>
+    <TD>Eugenia</TD>
+    <TD>0.9197</TD>
+    <TD>0.2189</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.9185815637434286</TD>
+    <TD>0.25736769249569214</TD>
+    <TD>0.0011184362565713757</TD>
+    <TD>-0.038467692495692124</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>7.83</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:49:36</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455432.866391782</TD>
+    <TD>2010-08-24T08:47:36.250</TD>
+    <TD>Eugenia</TD>
+    <TD>0.6132</TD>
+    <TD>0.5255</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.622187727308836</TD>
+    <TD>0.5452871650868599</TD>
+    <TD>-0.008987727308836013</TD>
+    <TD>-0.01978716508685996</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>7.75</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:50:09</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455432.868841204</TD>
+    <TD>2010-08-24T08:51:07.880</TD>
+    <TD>Eugenia</TD>
+    <TD>0.635</TD>
+    <TD>0.5254</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.6244428044845944</TD>
+    <TD>0.5436893324758765</TD>
+    <TD>0.01055719551540557</TD>
+    <TD>-0.018289332475876496</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>7.54</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:50:26</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455432.880186111</TD>
+    <TD>2010-08-24T09:07:28.080</TD>
+    <TD>Eugenia</TD>
+    <TD>0.635</TD>
+    <TD>0.5037</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.6347996179854889</TD>
+    <TD>0.536213954263709</TD>
+    <TD>2.0038201451111348E-4</TD>
+    <TD>-0.032513954263708955</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.57</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:50:41</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455433.8430284723</TD>
+    <TD>2010-08-25T08:13:57.660</TD>
+    <TD>Eugenia</TD>
+    <TD>0.8103</TD>
+    <TD>-0.3504</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.8311968730246767</TD>
+    <TD>-0.3222305466854949</TD>
+    <TD>-0.020896873024676688</TD>
+    <TD>-0.0281694533145051</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.34</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:51:00</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455436.8570359955</TD>
+    <TD>2010-08-28T08:34:07.910</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.2191</TD>
+    <TD>0.6786</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.20729300725024397</TD>
+    <TD>0.694878448202827</TD>
+    <TD>-0.011806992749756023</TD>
+    <TD>-0.01627844820282698</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.25</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:51:16</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455499.6948561342</TD>
+    <TD>2010-10-30T04:40:35.570</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5693</TD>
+    <TD>-0.1754</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.5712668322208794</TD>
+    <TD>-0.1449827744671287</TD>
+    <TD>-0.0019668322208793443</TD>
+    <TD>-0.030417225532871295</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.33</TD>
+    <TD>1.2</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:51:28</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455499.7067711805</TD>
+    <TD>2010-10-30T04:57:45.030</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5477</TD>
+    <TD>-0.1751</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.5671396757565825</TD>
+    <TD>-0.1524106656264435</TD>
+    <TD>-0.019439675756582564</TD>
+    <TD>-0.022689334373556497</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.6</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:51:46</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455499.709425</TD>
+    <TD>2010-10-30T05:01:34.320</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5696</TD>
+    <TD>-0.175</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.566200922684019</TD>
+    <TD>-0.15405982548182084</TD>
+    <TD>0.0033990773159809917</TD>
+    <TD>-0.020940174518179144</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.02</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:51:58</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455500.7192983795</TD>
+    <TD>2010-10-31T05:15:47.380</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.1316</TD>
+    <TD>-0.504</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.13137437987533537</TD>
+    <TD>-0.48732925748824374</TD>
+    <TD>-2.2562012466462167E-4</TD>
+    <TD>-0.016670742511756265</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.38</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:52:28</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455530.716747222</TD>
+    <TD>2010-11-30T05:12:06.960</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.2697</TD>
+    <TD>0.3005</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.26450159188320743</TD>
+    <TD>0.3124178071844747</TD>
+    <TD>-0.005198408116792563</TD>
+    <TD>-0.011917807184474716</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>9.72</TD>
+    <TD>1.19</TD>
+    <TD>B</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:53:00</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455871.6716122683</TD>
+    <TD>2011-11-06T04:07:07.300</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.2371</TD>
+    <TD>-0.37</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.2668098188465984</TD>
+    <TD>-0.3625250720270175</TD>
+    <TD>0.029709818846598374</TD>
+    <TD>-0.0074749279729824925</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.4</TD>
+    <TD>1.2</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:53:24</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455880.547716435</TD>
+    <TD>2011-11-15T01:08:42.700</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.0663</TD>
+    <TD>0.199</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.1004823389619829</TD>
+    <TD>0.2078937011140489</TD>
+    <TD>0.0341823389619829</TD>
+    <TD>-0.008893701114048885</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>8.3</TD>
+    <TD>1.19</TD>
+    <TD>B</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:53:48</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455881.555540509</TD>
+    <TD>2011-11-16T01:19:58.700</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.2376</TD>
+    <TD>-0.6988</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.26214733737844576</TD>
+    <TD>-0.6992178141254292</TD>
+    <TD>0.02454733737844575</TD>
+    <TD>4.178141254291834E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>6.87</TD>
+    <TD>0.03</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:39:37</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455888.5755104166</TD>
+    <TD>2011-11-23T01:48:44.100</TD>
+    <TD>Eugenia</TD>
+    <TD>0.2339</TD>
+    <TD>0.6668</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.2481594009981971</TD>
+    <TD>0.6595554676904394</TD>
+    <TD>-0.014259400998197114</TD>
+    <TD>0.00724453230956057</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>8.0</TD>
+    <TD>0.06</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:40:07</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455894.531004282</TD>
+    <TD>2011-11-29T00:44:38.770</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.0131</TD>
+    <TD>0.3184</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.023550381737448684</TD>
+    <TD>0.3390525928357098</TD>
+    <TD>0.010450381737448684</TD>
+    <TD>-0.020652592835709804</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>8.73</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:54:27</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455894.593036227</TD>
+    <TD>2011-11-29T02:13:58.330</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.0266</TD>
+    <TD>0.2652</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.0427297522869693</TD>
+    <TD>0.28164595474879583</TD>
+    <TD>0.0161297522869693</TD>
+    <TD>-0.016445954748795844</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>8.09</TD>
+    <TD>1.19</TD>
+    <TD>B</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:55:25</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455895.6426267363</TD>
+    <TD>2011-11-30T03:25:22.950</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.2122</TD>
+    <TD>-0.6636</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.23338784021524245</TD>
+    <TD>-0.6451742467072231</TD>
+    <TD>0.02118784021524245</TD>
+    <TD>-0.018425753292776847</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>8.69</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:55:02</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455895.691242014</TD>
+    <TD>2011-11-30T04:35:23.310</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.2132</TD>
+    <TD>-0.6675</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.23271134591351628</TD>
+    <TD>-0.6693628175783227</TD>
+    <TD>0.019511345913516276</TD>
+    <TD>0.0018628175783227396</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>6.91</TD>
+    <TD>0.09</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:41:18</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455910.7479677084</TD>
+    <TD>2011-12-15T05:57:04.410</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.0678</TD>
+    <TD>-0.5035</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.06444279422734153</TD>
+    <TD>-0.5130127631974959</TD>
+    <TD>-0.003357205772658467</TD>
+    <TD>0.009512763197495944</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>7.53</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:55:43</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455911.695587384</TD>
+    <TD>2011-12-16T04:41:38.750</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1609</TD>
+    <TD>0.3051</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.16667638279337582</TD>
+    <TD>0.30556485146090584</TD>
+    <TD>-0.005776382793375834</TD>
+    <TD>-4.648514609058574E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>7.77</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:56:01</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455911.757803472</TD>
+    <TD>2011-12-16T06:11:14.220</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1609</TD>
+    <TD>0.3609</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.1759961661716418</TD>
+    <TD>0.3568611603753459</TD>
+    <TD>-0.015096166171641806</TD>
+    <TD>0.0040388396246541225</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.44</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:56:13</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455912.7699539354</TD>
+    <TD>2011-12-17T06:28:44.020</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1501</TD>
+    <TD>0.6678</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.14085436717646158</TD>
+    <TD>0.6634197773278347</TD>
+    <TD>0.009245632823538436</TD>
+    <TD>0.0043802226721652016</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>7.73</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:56:24</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455912.7742310185</TD>
+    <TD>2011-12-17T06:34:53.560</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1497</TD>
+    <TD>0.657</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.14000550215189017</TD>
+    <TD>0.662154806562032</TD>
+    <TD>0.009694497848109829</TD>
+    <TD>-0.005154806562031933</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>7.82</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>J</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:56:37</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2456373.822224537</TD>
+    <TD>2013-03-22T07:44:00.200</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1429</TD>
+    <TD>0.6534</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.14526516597992792</TD>
+    <TD>0.6359483874854949</TD>
+    <TD>-0.002365165979927919</TD>
+    <TD>0.01745161251450511</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>8.11</TD>
+    <TD>0.48</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:42:56</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2456408.7398850694</TD>
+    <TD>2013-04-26T05:45:26.070</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.4081</TD>
+    <TD>-0.408</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.40489207494638507</TD>
+    <TD>-0.3929985778933184</TD>
+    <TD>-0.003207925053614946</TD>
+    <TD>-0.015001422106681594</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.61</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:56:53</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2456409.736295139</TD>
+    <TD>2013-04-27T05:40:15.900</TD>
+    <TD>Eugenia</TD>
+    <TD>0.3663</TD>
+    <TD>-0.4684</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.36884040168764015</TD>
+    <TD>-0.45319189476726185</TD>
+    <TD>-0.002540401687640137</TD>
+    <TD>-0.015208105232738134</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>pixel</TD>
+    <TD>8.2</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:57:11</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2457257.687854398</TD>
+    <TD>2015-08-23T04:30:30.620</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.5563</TD>
+    <TD>-0.2965</TD>
+    <TD>0.0123</TD>
+    <TD>0.0123</TD>
+    <TD>-0.5520713133576426</TD>
+    <TD>-0.2896058227602203</TD>
+    <TD>-0.0042286866423574265</TD>
+    <TD>-0.006894177239779697</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.01</TD>
+    <TD>0.01</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/IRDIS</TD>
+    <TD>Y</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-05-11 13:14:28</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2457258.6865317128</TD>
+    <TD>2015-08-24T04:28:36.340</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.0726</TD>
+    <TD>0.6751</TD>
+    <TD>0.0123</TD>
+    <TD>0.0123</TD>
+    <TD>-0.02575015969601662</TD>
+    <TD>0.6652577282291762</TD>
+    <TD>-0.04684984030398338</TD>
+    <TD>0.009842271770823863</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.39</TD>
+    <TD>0.01</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/IRDIS</TD>
+    <TD>Y</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-05-11 13:15:18</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2457259.6532013887</TD>
+    <TD>2015-08-25T03:40:36.600</TD>
+    <TD>Eugenia</TD>
+    <TD>0.523</TD>
+    <TD>0.6319</TD>
+    <TD>0.0123</TD>
+    <TD>0.0123</TD>
+    <TD>0.5383279486958691</TD>
+    <TD>0.6295652143676014</TD>
+    <TD>-0.015327948695869065</TD>
+    <TD>0.0023347856323986393</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>6.93</TD>
+    <TD>0.01</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/IRDIS</TD>
+    <TD>Y</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-05-11 13:16:32</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2457259.6698730323</TD>
+    <TD>2015-08-25T04:04:37.030</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5282</TD>
+    <TD>0.6189</TD>
+    <TD>0.0123</TD>
+    <TD>0.0123</TD>
+    <TD>0.5423140094112647</TD>
+    <TD>0.6180898410979666</TD>
+    <TD>-0.014114009411264727</TD>
+    <TD>8.101589020333977E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>6.96</TD>
+    <TD>0.01</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/IRDIS</TD>
+    <TD>Ks</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-05-11 13:17:40</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2457259.717379051</TD>
+    <TD>2015-08-25T05:13:01.550</TD>
+    <TD>Eugenia</TD>
+    <TD>0.54</TD>
+    <TD>0.5864</TD>
+    <TD>0.0123</TD>
+    <TD>0.0123</TD>
+    <TD>0.5522062369766698</TD>
+    <TD>0.5837385411389386</TD>
+    <TD>-0.012206236976669782</TD>
+    <TD>0.0026614588610613943</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>6.95</TD>
+    <TD>0.01</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/IRDIS</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-05-11 13:18:32</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2457259.7255611112</TD>
+    <TD>2015-08-25T05:24:48.480</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5404</TD>
+    <TD>0.5806</TD>
+    <TD>0.0123</TD>
+    <TD>0.0123</TD>
+    <TD>0.5536888101620113</TD>
+    <TD>0.5775822322884044</TD>
+    <TD>-0.013288810162011333</TD>
+    <TD>0.003017767711595565</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>6.91</TD>
+    <TD>0.0</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/IRDIS</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-05-11 13:19:19</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2457259.808816088</TD>
+    <TD>2015-08-25T07:24:41.710</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5541</TD>
+    <TD>0.5158</TD>
+    <TD>0.0123</TD>
+    <TD>0.0123</TD>
+    <TD>0.5650239021210689</TD>
+    <TD>0.5111684551251189</TD>
+    <TD>-0.010923902121068862</TD>
+    <TD>0.004631544874881155</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>6.77</TD>
+    <TD>0.02</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/IRDIS</TD>
+    <TD>Ks</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-05-11 13:20:19</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2457262.751938889</TD>
+    <TD>2015-08-28T06:02:47.520</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.4805</TD>
+    <TD>0.0796</TD>
+    <TD>0.0123</TD>
+    <TD>0.0123</TD>
+    <TD>-0.4561131566059662</TD>
+    <TD>0.08092396068813835</TD>
+    <TD>-0.024386843394033797</TD>
+    <TD>-0.0013239606881383509</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.45</TD>
+    <TD>0.02</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/IRDIS</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-05-11 13:21:02</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2457267.8001509258</TD>
+    <TD>2015-09-02T07:12:13.040</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.3115</TD>
+    <TD>0.4404</TD>
+    <TD>0.0123</TD>
+    <TD>0.0123</TD>
+    <TD>-0.2668608197466849</TD>
+    <TD>0.425165287475493</TD>
+    <TD>-0.04463918025331509</TD>
+    <TD>0.015234712524507033</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.24</TD>
+    <TD>0.01</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/IRDIS</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-05-11 13:22:33</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2457269.706141435</TD>
+    <TD>2015-09-04T04:56:50.620</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5484</TD>
+    <TD>0.0402</TD>
+    <TD>0.0123</TD>
+    <TD>0.0123</TD>
+    <TD>0.523255300239012</TD>
+    <TD>0.04807438106219819</TD>
+    <TD>0.025144699760987987</TD>
+    <TD>-0.00787438106219819</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.32</TD>
+    <TD>0.02</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/IRDIS</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-05-11 13:23:17</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2457271.6736383103</TD>
+    <TD>2015-09-06T04:10:02.350</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.5957</TD>
+    <TD>-0.4552</TD>
+    <TD>0.0123</TD>
+    <TD>0.0123</TD>
+    <TD>-0.5990432718324227</TD>
+    <TD>-0.44876413745521365</TD>
+    <TD>0.0033432718324226673</TD>
+    <TD>-0.0064358625447863416</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.03</TD>
+    <TD>0.0</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/IRDIS</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-05-11 13:24:14</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458242.5703747687</TD>
+    <TD>2018-05-04T01:41:20.380</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1875</TD>
+    <TD>0.4692</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.1798396355650387</TD>
+    <TD>0.4942185691802444</TD>
+    <TD>0.007660364434961292</TD>
+    <TD>-0.02501856918024442</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.94</TD>
+    <TD>0.03</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:44:29</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458242.58475544</TD>
+    <TD>2018-05-04T02:02:02.870</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1763</TD>
+    <TD>0.4827</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.17146612363584535</TD>
+    <TD>0.507494594442657</TD>
+    <TD>0.004833876364154666</TD>
+    <TD>-0.02479459444265697</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.76</TD>
+    <TD>0.02</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:44:45</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458242.6162938657</TD>
+    <TD>2018-05-04T02:47:27.790</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1568</TD>
+    <TD>0.5085</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.15288864784522035</TD>
+    <TD>0.5359419465559684</TD>
+    <TD>0.00391135215477964</TD>
+    <TD>-0.027441946555968433</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>8.05</TD>
+    <TD>0.03</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:44:55</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458242.630672801</TD>
+    <TD>2018-05-04T03:08:10.130</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1468</TD>
+    <TD>0.5143</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.14432853335107756</TD>
+    <TD>0.5485961580472585</TD>
+    <TD>0.002471466648922449</TD>
+    <TD>-0.034296158047258496</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.22</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:58:03</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458242.639715162</TD>
+    <TD>2018-05-04T03:21:11.390</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1381</TD>
+    <TD>0.5236</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.13891849864726494</TD>
+    <TD>0.5564496532955077</TD>
+    <TD>-8.184986472649369E-4</TD>
+    <TD>-0.03284965329550771</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.13</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:58:20</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458242.6540973377</TD>
+    <TD>2018-05-04T03:41:54.010</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1321</TD>
+    <TD>0.5399</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.13027313102949348</TD>
+    <TD>0.5687717651049233</TD>
+    <TD>0.0018268689705065178</TD>
+    <TD>-0.028871765104923286</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.8</TD>
+    <TD>0.02</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:45:51</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458242.6916871527</TD>
+    <TD>2018-05-04T04:36:01.770</TD>
+    <TD>Eugenia</TD>
+    <TD>0.1066</TD>
+    <TD>0.5694</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.10746369518106468</TD>
+    <TD>0.5999664261657074</TD>
+    <TD>-8.636951810646748E-4</TD>
+    <TD>-0.030566426165707372</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.9</TD>
+    <TD>0.02</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:46:02</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458242.7060582177</TD>
+    <TD>2018-05-04T04:56:43.430</TD>
+    <TD>Eugenia</TD>
+    <TD>0.0977</TD>
+    <TD>0.5832</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.0986707055303426</TD>
+    <TD>0.6114939317690623</TD>
+    <TD>-9.707055303426054E-4</TD>
+    <TD>-0.028293931769062253</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.96</TD>
+    <TD>0.04</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:46:11</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458692.846630208</TD>
+    <TD>2019-07-28T08:19:08.850</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.1183</TD>
+    <TD>-0.9161</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>-0.10094311834278127</TD>
+    <TD>-0.9109266583687908</TD>
+    <TD>-0.01735688165721873</TD>
+    <TD>-0.005173341631209194</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>8.53</TD>
+    <TD>0.02</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:46:22</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458692.8578216434</TD>
+    <TD>2019-07-28T08:35:15.790</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.1392</TD>
+    <TD>-0.9194</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>-0.11606580831972413</TD>
+    <TD>-0.9101267915876249</TD>
+    <TD>-0.023134191680275862</TD>
+    <TD>-0.009273208412375111</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.69</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 15:58:48</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458693.8145358795</TD>
+    <TD>2019-07-29T07:32:55.900</TD>
+    <TD>Eugenia</TD>
+    <TD>-1.0106</TD>
+    <TD>-0.1993</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>-1.0014432688005592</TD>
+    <TD>-0.20641849221242736</TD>
+    <TD>-0.009156731199440715</TD>
+    <TD>0.0071184922124273575</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>10.55</TD>
+    <TD>0.17</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:47:02</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458693.8257199074</TD>
+    <TD>2019-07-29T07:49:02.200</TD>
+    <TD>Eugenia</TD>
+    <TD>-1.0113</TD>
+    <TD>-0.1907</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>-1.0040651772389795</TD>
+    <TD>-0.19315611747018016</TD>
+    <TD>-0.0072348227610206095</TD>
+    <TD>0.0024561174701801525</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>9.67</TD>
+    <TD>0.14</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2021-01-26 09:46:51</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458694.8153114584</TD>
+    <TD>2019-07-30T07:34:02.910</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.41</TD>
+    <TD>0.8193</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>-0.4135447216397816</TD>
+    <TD>0.8134267915884399</TD>
+    <TD>0.003544721639781645</TD>
+    <TD>0.005873208411560138</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>8.92</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:00:04</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458694.8264758103</TD>
+    <TD>2019-07-30T07:50:07.510</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.3893</TD>
+    <TD>0.8242</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>-0.3996546409853653</TD>
+    <TD>0.8193794836105917</TD>
+    <TD>0.010354640985365315</TD>
+    <TD>0.004820516389408391</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.03</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:00:22</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458698.675498264</TD>
+    <TD>2019-08-03T04:12:43.050</TD>
+    <TD>Eugenia</TD>
+    <TD>-1.0169</TD>
+    <TD>-0.0249</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>-1.0125472417913448</TD>
+    <TD>-0.017746675177055655</TD>
+    <TD>-0.004352758208655105</TD>
+    <TD>-0.007153324822944344</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>10.93</TD>
+    <TD>1.19</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:00:45</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458698.7132758102</TD>
+    <TD>2019-08-03T05:07:07.030</TD>
+    <TD>Eugenia</TD>
+    <TD>-1.0171</TD>
+    <TD>0.0304</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>-1.0102779713382168</TD>
+    <TD>0.02764128390514986</TD>
+    <TD>-0.006822028661783053</TD>
+    <TD>0.0027587160948501395</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>10.64</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:01:19</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458698.724448032</TD>
+    <TD>2019-08-03T05:23:12.310</TD>
+    <TD>Eugenia</TD>
+    <TD>-1.0106</TD>
+    <TD>0.0412</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>-1.0091159610256852</TD>
+    <TD>0.04105483697479692</TD>
+    <TD>-0.0014840389743147053</TD>
+    <TD>1.4516302520307944E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>10.25</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:01:47</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458700.713385648</TD>
+    <TD>2019-08-05T05:07:16.520</TD>
+    <TD>Eugenia</TD>
+    <TD>0.9306</TD>
+    <TD>0.3858</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.9260738028222516</TD>
+    <TD>0.3823445218722463</TD>
+    <TD>0.004526197177748381</TD>
+    <TD>0.003455478127753653</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.39</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:02:12</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458700.7245851853</TD>
+    <TD>2019-08-05T05:23:24.160</TD>
+    <TD>Eugenia</TD>
+    <TD>0.9339</TD>
+    <TD>0.3734</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.9318982184943236</TD>
+    <TD>0.37018631829062354</TD>
+    <TD>0.0020017815056763144</TD>
+    <TD>0.0032136817093764702</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.41</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:02:28</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458701.5314194444</TD>
+    <TD>2019-08-06T00:45:14.640</TD>
+    <TD>Eugenia</TD>
+    <TD>0.7706</TD>
+    <TD>-0.5445</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.7790501710300212</TD>
+    <TD>-0.5414883657173022</TD>
+    <TD>-0.008450171030021214</TD>
+    <TD>-0.003011634282697795</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>8.9</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:02:52</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458701.5425975695</TD>
+    <TD>2019-08-06T01:01:20.430</TD>
+    <TD>Eugenia</TD>
+    <TD>0.7608</TD>
+    <TD>-0.5553</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.7694298401703425</TD>
+    <TD>-0.5520176056235062</TD>
+    <TD>-0.008629840170342518</TD>
+    <TD>-0.0032823943764938024</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.29</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:03:07</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458701.747195139</TD>
+    <TD>2019-08-06T05:55:57.660</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5546</TD>
+    <TD>-0.7302</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.5654416130725791</TD>
+    <TD>-0.72056140495895</TD>
+    <TD>-0.010841613072579137</TD>
+    <TD>-0.009638595041049913</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>8.5</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:03:34</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458701.758374537</TD>
+    <TD>2019-08-06T06:12:03.560</TD>
+    <TD>Eugenia</TD>
+    <TD>0.5404</TD>
+    <TD>-0.7376</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>0.5529343221276215</TD>
+    <TD>-0.7283146142303868</TD>
+    <TD>-0.012534322127621511</TD>
+    <TD>-0.009285385769613241</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>8.61</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:03:53</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458702.5236274307</TD>
+    <TD>2019-08-07T00:34:01.410</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.451</TD>
+    <TD>-0.8238</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>-0.4280471048357356</TD>
+    <TD>-0.8164627857686209</TD>
+    <TD>-0.02295289516426441</TD>
+    <TD>-0.007337214231379119</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>10.07</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:04:22</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458702.5348175927</TD>
+    <TD>2019-08-07T00:50:08.240</TD>
+    <TD>Eugenia</TD>
+    <TD>-0.4662</TD>
+    <TD>-0.8204</TD>
+    <TD>0.0036</TD>
+    <TD>0.0036</TD>
+    <TD>-0.4415590285831018</TD>
+    <TD>-0.8110646304104365</TD>
+    <TD>-0.024640971416898194</TD>
+    <TD>-0.009335369589563491</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>pixel</TD>
+    <TD>9.98</TD>
+    <TD>1.19</TD>
+    <TD>A+</TD>
+    <TD>eso-vlt</TD>
+    <TD>SPHERE/ZIMPOL</TD>
+    <TD>R</TD>
+    <TD>F. Vachier</TD>
+    <TD>2022-12-01 16:04:49</TD>
+    <TD></TD>
+  </TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>

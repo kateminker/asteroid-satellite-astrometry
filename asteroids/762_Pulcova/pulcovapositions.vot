@@ -1,0 +1,2080 @@
+<?xml version='1.0'?>
+<VOTABLE version="1.4"
+ xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
+<!--
+ !  VOTable written by STIL version 3.4-debian (uk.ac.starlink.votable.VOTableWriter)
+ !  at 2024-05-20T19:55:11
+ !-->
+<RESOURCE>
+<RESOURCE>
+  <COOSYS ID="t1-coosys-1" equinox="J2000" system="ICRS"/>
+</RESOURCE>
+<TABLE name="obs.dat" nrows="68">
+<PARAM arraysize="7" datatype="char" name="ref_system" ucd="meta.note" value="Pulcova">
+<DESCRIPTION>Designation du systeme de reference</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="11" datatype="char" name="obs_target" ucd="meta.note" value="S2000-762-1">
+<DESCRIPTION>Designation de la cible observee</DESCRIPTION>
+</PARAM>
+<PARAM arraysize="2" datatype="char" name="QUERY_STATUS" value="OK"/>
+<PARAM arraysize="28" datatype="char" name="Supplier" value="Provided by IMCCE/OBSPM/CNRS"/>
+<FIELD ID="tjj" datatype="double" name="tjj" ucd="time.epoch" unit="d">
+<DESCRIPTION>Epoch of observation in Julian day</DESCRIPTION>
+</FIELD>
+<FIELD ID="tiso" arraysize="*" datatype="char" name="tiso" ucd="time.epoch" unit="d">
+<DESCRIPTION>Epoch of observation in ISO format</DESCRIPTION>
+</FIELD>
+<FIELD ID="ref_name" arraysize="*" datatype="char" name="ref_name" ucd="meta.note">
+<DESCRIPTION>Name of the observed target</DESCRIPTION>
+</FIELD>
+<FIELD ID="xobs" datatype="double" name="xobs" ref="t1-coosys-1" ucd="pos.cartesian.x;obs" unit="arcsec">
+<DESCRIPTION>Observed x coordinates</DESCRIPTION>
+</FIELD>
+<FIELD ID="yobs" datatype="double" name="yobs" ref="t1-coosys-1" ucd="pos.cartesian.y;obs" unit="arcsec">
+<DESCRIPTION>Observed y coordinates</DESCRIPTION>
+</FIELD>
+<FIELD ID="xobs_err" datatype="double" name="xobs_err" ref="t1-coosys-1" ucd="stat.error;pos.cartesian.x;obs" unit="arcsec">
+<DESCRIPTION>Uncertainty of xobs coordinate</DESCRIPTION>
+</FIELD>
+<FIELD ID="yobs_err" datatype="double" name="yobs_err" ref="t1-coosys-1" ucd="stat.error;pos.cartesian.y;obs" unit="arcsec">
+<DESCRIPTION>Uncertainty of yobs coordinate</DESCRIPTION>
+</FIELD>
+<FIELD ID="xcalc" datatype="double" name="xcalc" ref="t1-coosys-1" ucd="pos.cartesian.x;meta.modelled" unit="arcsec">
+<DESCRIPTION>Computed x coordinates</DESCRIPTION>
+</FIELD>
+<FIELD ID="ycalc" datatype="double" name="ycalc" ref="t1-coosys-1" ucd="pos.cartesian.y;meta.modelled" unit="arcsec">
+<DESCRIPTION>Computed y coordinates</DESCRIPTION>
+</FIELD>
+<FIELD ID="xomc" datatype="double" name="xomc" ref="t1-coosys-1" ucd="stat.error;pos.cartesian.x;meta.modelled" unit="arcsec">
+<DESCRIPTION>Observed minus computed x position (xobs-xcalc)</DESCRIPTION>
+</FIELD>
+<FIELD ID="yomc" datatype="double" name="yomc" ref="t1-coosys-1" ucd="stat.error;pos.cartesian.y;meta.modelled" unit="arcsec">
+<DESCRIPTION>Observed minus computed y position (yobs-ycalc)</DESCRIPTION>
+</FIELD>
+<FIELD ID="timescale" arraysize="*" datatype="char" name="timescale" ucd="meta.note">
+<DESCRIPTION>Time scale of observation (UTC, TT)</DESCRIPTION>
+</FIELD>
+<FIELD ID="centerframe" arraysize="*" datatype="char" name="centerframe" ucd="meta.note">
+<DESCRIPTION>Center of the reference frame (1:heliocentric, 2:geocentric, 3:topocentric, 4:spacecraft)</DESCRIPTION>
+</FIELD>
+<FIELD ID="typeframe" arraysize="*" datatype="char" name="typeframe" ucd="meta.note">
+<DESCRIPTION>Type of frame (1:astrometric J2000, 2:apparent, 3:mean of date, 4:mean J2000)</DESCRIPTION>
+</FIELD>
+<FIELD ID="coordtype" arraysize="*" datatype="char" name="coordtype" ucd="meta.note">
+<DESCRIPTION>Type of coordinates (1:spherical, 2:rectangular)</DESCRIPTION>
+</FIELD>
+<FIELD ID="refframe" arraysize="*" datatype="char" name="refframe" ucd="meta.note">
+<DESCRIPTION>Reference plane (1:equator, 2:ecliptic)</DESCRIPTION>
+</FIELD>
+<FIELD ID="obsuai" arraysize="*" datatype="char" name="obsuai" ucd="meta.note">
+<DESCRIPTION>Observatory IAU code</DESCRIPTION>
+</FIELD>
+<FIELD ID="photom" arraysize="*" datatype="char" name="photom" ucd="phot.flux;meta.note">
+<DESCRIPTION>Photometric method used to obtain x,y measurements</DESCRIPTION>
+</FIELD>
+<FIELD ID="dmag" datatype="double" name="dmag" ucd="phot.mag;em.opt.R;arith.diff" unit="mag">
+<DESCRIPTION>Difference in magnitude between primary and satellite</DESCRIPTION>
+</FIELD>
+<FIELD ID="sigdmag" datatype="double" name="sigdmag" ucd="stat.stdev;phot.mag;em.opt.R" unit="mag">
+<DESCRIPTION>Standard deviation on dmag</DESCRIPTION>
+</FIELD>
+<FIELD ID="quality" arraysize="*" datatype="char" name="quality" ucd="meta.note">
+<DESCRIPTION>Quality note of the measure (A|A+|B|C|D)</DESCRIPTION>
+</FIELD>
+<FIELD ID="telescope" arraysize="*" datatype="char" name="telescope" ucd="meta.note">
+<DESCRIPTION>Telescope used to acquire the measure</DESCRIPTION>
+</FIELD>
+<FIELD ID="camera" arraysize="*" datatype="char" name="camera" ucd="meta.note">
+<DESCRIPTION>Camera used to acquire the measure</DESCRIPTION>
+</FIELD>
+<FIELD ID="filter" arraysize="*" datatype="char" name="filter" ucd="meta.note">
+<DESCRIPTION>Filter used to acquire the measure</DESCRIPTION>
+</FIELD>
+<FIELD ID="author" arraysize="*" datatype="char" name="author" ucd="meta.note">
+<DESCRIPTION>Name of the person who measured the image</DESCRIPTION>
+</FIELD>
+<FIELD ID="when" arraysize="*" datatype="char" name="when" ucd="meta.note">
+<DESCRIPTION>Epoch at which the image was measured the last time (ISO format)</DESCRIPTION>
+</FIELD>
+<FIELD ID="bibitem" arraysize="*" datatype="char" name="bibitem" ucd="meta.note">
+<DESCRIPTION>Bibliographic reference</DESCRIPTION>
+</FIELD>
+<DATA>
+<TABLEDATA>
+  <TR>
+    <TD>2453909.7630983796</TD>
+    <TD>2006-06-23T06:18:51.700</TD>
+    <TD>Pulcova</TD>
+    <TD>0.2981</TD>
+    <TD>0.1358</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.2816976076107642</TD>
+    <TD>0.12397493637607819</TD>
+    <TD>0.016402392389235798</TD>
+    <TD>0.011825063623921814</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.52</TD>
+    <TD>0.33</TD>
+    <TD>B</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:33:11</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453909.750029282</TD>
+    <TD>2006-06-23T06:00:02.530</TD>
+    <TD>Pulcova</TD>
+    <TD>0.304</TD>
+    <TD>0.1368</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.28592700001199867</TD>
+    <TD>0.11907492418026429</TD>
+    <TD>0.018072999988001326</TD>
+    <TD>0.017725075819735717</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.41</TD>
+    <TD>0.17</TD>
+    <TD>B</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:32:20</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453873.8038310185</TD>
+    <TD>2006-05-18T07:17:31.000</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.3341</TD>
+    <TD>0.2658</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.3262718363251292</TD>
+    <TD>0.2472090011525263</TD>
+    <TD>-0.007828163674870825</TD>
+    <TD>0.018590998847473672</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.09</TD>
+    <TD>0.07</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:30:20</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453871.7534305556</TD>
+    <TD>2006-05-16T06:04:56.400</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3348</TD>
+    <TD>-0.2469</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.32903253956473755</TD>
+    <TD>-0.2507133224053729</TD>
+    <TD>0.005767460435262439</TD>
+    <TD>0.00381332240537291</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.26</TD>
+    <TD>0.62</TD>
+    <TD>C</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:28:53</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453853.8552824073</TD>
+    <TD>2006-04-28T08:31:36.400</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.4518</TD>
+    <TD>-0.0835</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.43860726252459953</TD>
+    <TD>-0.08596430805001631</TD>
+    <TD>-0.013192737475400451</TD>
+    <TD>0.002464308050016309</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.35</TD>
+    <TD>0.02</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:27:25</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453853.851860301</TD>
+    <TD>2006-04-28T08:26:40.730</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.4501</TD>
+    <TD>-0.0832</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.4394603298840342</TD>
+    <TD>-0.08409554810959201</TD>
+    <TD>-0.010639670115965782</TD>
+    <TD>8.95548109592012E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.7</TD>
+    <TD>0.04</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:24:54</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453813.0333935185</TD>
+    <TD>2006-03-18T12:48:05.200</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.1937</TD>
+    <TD>-0.3479</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.18810711462790522</TD>
+    <TD>-0.3430810197267468</TD>
+    <TD>-0.005592885372094791</TD>
+    <TD>-0.004818980273253171</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.8</TD>
+    <TD>0.05</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:24:21</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453813.030440972</TD>
+    <TD>2006-03-18T12:43:50.100</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.1955</TD>
+    <TD>-0.3445</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.19011922010025414</TD>
+    <TD>-0.3421109009500572</TD>
+    <TD>-0.005380779899745863</TD>
+    <TD>-0.0023890990499427778</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.63</TD>
+    <TD>0.04</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:23:32</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453813.0248364583</TD>
+    <TD>2006-03-18T12:35:45.870</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.2047</TD>
+    <TD>-0.3475</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.19392822637104498</TD>
+    <TD>-0.34025077793691066</TD>
+    <TD>-0.010771773628955011</TD>
+    <TD>-0.007249222063089311</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.89</TD>
+    <TD>0.26</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:15:45</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453315.101434028</TD>
+    <TD>2004-11-05T14:26:03.900</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3263</TD>
+    <TD>0.2467</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.3169152813771276</TD>
+    <TD>0.23112036702104652</TD>
+    <TD>0.009384718622872379</TD>
+    <TD>0.015579632978953484</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.42</TD>
+    <TD>0.04</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:15:03</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453313.0731195603</TD>
+    <TD>2004-11-03T13:45:17.530</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.3386</TD>
+    <TD>-0.2412</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.3232170829083968</TD>
+    <TD>-0.23094528807327283</TD>
+    <TD>-0.015382917091603221</TD>
+    <TD>-0.010254711926727167</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.64</TD>
+    <TD>0.19</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:13:45</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453312.004679398</TD>
+    <TD>2004-11-02T12:06:44.300</TD>
+    <TD>Pulcova</TD>
+    <TD>0.2243</TD>
+    <TD>0.0144</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.21566090137127644</TD>
+    <TD>0.02107909166147612</TD>
+    <TD>0.008639098628723557</TD>
+    <TD>-0.006679091661476122</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.79</TD>
+    <TD>0.54</TD>
+    <TD>D</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:17:38</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2453309.109547222</TD>
+    <TD>2004-10-30T14:37:44.880</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.3644</TD>
+    <TD>-0.2368</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.3551772750269874</TD>
+    <TD>-0.2222145234011246</TD>
+    <TD>-0.009222724973012575</TD>
+    <TD>-0.014585476598875408</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.92</TD>
+    <TD>0.28</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:11:55</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452870.1453435184</TD>
+    <TD>2003-08-18T15:29:17.680</TD>
+    <TD>Pulcova</TD>
+    <TD>0.2313</TD>
+    <TD>0.2493</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.24686632741383102</TD>
+    <TD>0.2664247003114216</TD>
+    <TD>-0.015566327413831016</TD>
+    <TD>-0.01712470031142163</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.93</TD>
+    <TD>0.33</TD>
+    <TD>B</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:10:11</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452870.0845634257</TD>
+    <TD>2003-08-18T14:01:46.280</TD>
+    <TD>Pulcova</TD>
+    <TD>0.2236</TD>
+    <TD>0.2814</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.22058609198840085</TD>
+    <TD>0.27909536973037247</TD>
+    <TD>0.003013908011599148</TD>
+    <TD>0.0023046302696275167</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.2</TD>
+    <TD>0.04</TD>
+    <TD>A+</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>B. Carry</TD>
+    <TD>2023-01-24 17:06:22</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452870.0838092593</TD>
+    <TD>2003-08-18T14:00:41.120</TD>
+    <TD>Pulcova</TD>
+    <TD>0.2225</TD>
+    <TD>0.28</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.22024797935021995</TD>
+    <TD>0.2792379635943843</TD>
+    <TD>0.0022520206497800566</TD>
+    <TD>7.620364056157292E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.32</TD>
+    <TD>0.17</TD>
+    <TD>A+</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>B. Carry</TD>
+    <TD>2023-01-24 17:06:15</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452869.1055608797</TD>
+    <TD>2003-08-17T14:32:00.460</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.2848</TD>
+    <TD>0.1428</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.2729713718830833</TD>
+    <TD>0.15105725465514808</TD>
+    <TD>-0.011828628116916706</TD>
+    <TD>-0.008257254655148066</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.11</TD>
+    <TD>0.07</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:08:29</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452866.0501060183</TD>
+    <TD>2003-08-14T13:12:09.160</TD>
+    <TD>Pulcova</TD>
+    <TD>0.2873</TD>
+    <TD>0.2487</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.2566553571862147</TD>
+    <TD>0.2528551266993857</TD>
+    <TD>0.030644642813785317</TD>
+    <TD>-0.004155126699385697</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.7</TD>
+    <TD>0.14</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:07:41</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452866.0074658566</TD>
+    <TD>2003-08-14T12:10:45.050</TD>
+    <TD>Pulcova</TD>
+    <TD>0.2429</TD>
+    <TD>0.2744</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.239590447917749</TD>
+    <TD>0.26263918999004693</TD>
+    <TD>0.003309552082251005</TD>
+    <TD>0.011760810009953049</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.83</TD>
+    <TD>0.13</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 14:16:10</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452862.128436227</TD>
+    <TD>2003-08-10T15:04:56.890</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3249</TD>
+    <TD>0.1826</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.3176695348773635</TD>
+    <TD>0.1871284904034411</TD>
+    <TD>0.007230465122636531</TD>
+    <TD>-0.004528490403441082</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.03</TD>
+    <TD>0.04</TD>
+    <TD>A+</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 14:15:14</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452862.1259822915</TD>
+    <TD>2003-08-10T15:01:24.870</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3259</TD>
+    <TD>0.1855</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.317066727279277</TD>
+    <TD>0.18796233365338233</TD>
+    <TD>0.00883327272072304</TD>
+    <TD>-0.0024623336533823315</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.0</TD>
+    <TD>0.12</TD>
+    <TD>A+</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 14:08:14</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452835.0910108797</TD>
+    <TD>2003-07-14T14:11:03.340</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.2277</TD>
+    <TD>-0.2096</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.22218650246659494</TD>
+    <TD>-0.20904299923134279</TD>
+    <TD>-0.005513497533405076</TD>
+    <TD>-5.570007686572231E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.12</TD>
+    <TD>0.63</TD>
+    <TD>B</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:55:36</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2452544.82720081</TD>
+    <TD>2002-09-27T07:51:10.150</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3021</TD>
+    <TD>-0.0811</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.28034789426961126</TD>
+    <TD>-0.08146999937898898</TD>
+    <TD>0.021752105730388716</TD>
+    <TD>3.6999937898897495E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.34</TD>
+    <TD>0.09</TD>
+    <TD>A+</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>B. Carry</TD>
+    <TD>2023-01-11 16:53:22</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.8350694445</TD>
+    <TD>2000-02-23T08:02:30.000</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3332</TD>
+    <TD>0.2621</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.28400286442883904</TD>
+    <TD>0.2696041636734023</TD>
+    <TD>0.049197135571160955</TD>
+    <TD>-0.0075041636734022865</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.88</TD>
+    <TD>1.06</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>Jcont         #6111</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:04:01</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.822770486</TD>
+    <TD>2000-02-23T07:44:47.370</TD>
+    <TD>Pulcova</TD>
+    <TD>0.2811</TD>
+    <TD>0.276</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.29237738775862426</TD>
+    <TD>0.26722835824818075</TD>
+    <TD>-0.011277387758624247</TD>
+    <TD>0.00877164175181927</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.19</TD>
+    <TD>0.18</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:03:19</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.8206944442</TD>
+    <TD>2000-02-23T07:41:48.000</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3338</TD>
+    <TD>0.2648</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.2937808896840309</TD>
+    <TD>0.2668178950612056</TD>
+    <TD>0.04001911031596911</TD>
+    <TD>-0.0020178950612056434</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.39</TD>
+    <TD>0.33</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H2 (1-0)     #6310</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:02:21</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.812089236</TD>
+    <TD>2000-02-23T07:29:24.510</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3376</TD>
+    <TD>0.2626</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.2995668067364394</TD>
+    <TD>0.26508767660477794</TD>
+    <TD>0.03803319326356064</TD>
+    <TD>-0.002487676604777944</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.98</TD>
+    <TD>0.67</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>IR 1.57       #6207</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:01:17</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.8089171294</TD>
+    <TD>2000-02-23T07:24:50.440</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3321</TD>
+    <TD>0.2627</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.3016866786383294</TD>
+    <TD>0.2644382002595462</TD>
+    <TD>0.03041332136167063</TD>
+    <TD>-0.0017382002595461854</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.4</TD>
+    <TD>0.18</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>IR 1.57       #6207</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:00:40</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.8058912037</TD>
+    <TD>2000-02-23T07:20:29.000</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3333</TD>
+    <TD>0.2621</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.303702282714248</TD>
+    <TD>0.2638128227928226</TD>
+    <TD>0.029597717285752</TD>
+    <TD>-0.001712822792822588</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.92</TD>
+    <TD>0.26</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>Kprime       #6308</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:00:05</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.8031716435</TD>
+    <TD>2000-02-23T07:16:34.030</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3349</TD>
+    <TD>0.2609</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.3055082993860995</TD>
+    <TD>0.26324591931073504</TD>
+    <TD>0.02939170061390045</TD>
+    <TD>-0.002345919310735023</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.01</TD>
+    <TD>0.24</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>Kprime       #6308</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 10:58:16</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.7982006944</TD>
+    <TD>2000-02-23T07:09:24.540</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3486</TD>
+    <TD>0.2619</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.3087958356569252</TD>
+    <TD>0.26219789699679646</TD>
+    <TD>0.03980416434307482</TD>
+    <TD>-2.978969967964429E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.84</TD>
+    <TD>1.13</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>J            #6108</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 10:55:43</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.7956141206</TD>
+    <TD>2000-02-23T07:05:41.060</TD>
+    <TD>Pulcova</TD>
+    <TD>0.35</TD>
+    <TD>0.259</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.31049946523244637</TD>
+    <TD>0.26164655440393236</TD>
+    <TD>0.03950053476755361</TD>
+    <TD>-0.002646554403932355</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.74</TD>
+    <TD>1.1</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>J            #6108</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 10:54:48</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451597.7911412036</TD>
+    <TD>2000-02-23T06:59:14.600</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3545</TD>
+    <TD>0.2563</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.31343411696586754</TD>
+    <TD>0.26068344757383166</TD>
+    <TD>0.041065883034132444</TD>
+    <TD>-0.004383447573831689</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.03</TD>
+    <TD>0.45</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 10:53:38</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451596.983933912</TD>
+    <TD>2000-02-22T11:36:51.890</TD>
+    <TD>Pulcova</TD>
+    <TD>0.5414</TD>
+    <TD>-0.0795</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.5097010474985866</TD>
+    <TD>-0.047790834304777284</TD>
+    <TD>0.03169895250141341</TD>
+    <TD>-0.03170916569522272</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.52</TD>
+    <TD>0.76</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>J            #6108</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 10:52:34</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451596.9651001156</TD>
+    <TD>2000-02-22T11:09:44.650</TD>
+    <TD>Pulcova</TD>
+    <TD>0.5373</TD>
+    <TD>-0.0748</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.5052008146936086</TD>
+    <TD>-0.05620529882229337</TD>
+    <TD>0.03209918530639144</TD>
+    <TD>-0.018594701177706632</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.72</TD>
+    <TD>0.3</TD>
+    <TD>A</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 10:52:17</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451596.945589352</TD>
+    <TD>2000-02-22T10:41:38.920</TD>
+    <TD>Pulcova</TD>
+    <TD>0.5337</TD>
+    <TD>-0.0826</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.5001054719414063</TD>
+    <TD>-0.06487324806893931</TD>
+    <TD>0.03359452805859364</TD>
+    <TD>-0.0177267519310607</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.7</TD>
+    <TD>0.25</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>H            #6210</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 10:51:28</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2451596.9284405094</TD>
+    <TD>2000-02-22T10:16:57.260</TD>
+    <TD>Pulcova</TD>
+    <TD>0.5636</TD>
+    <TD>-0.0607</TD>
+    <TD>0.035</TD>
+    <TD>0.035</TD>
+    <TD>0.49526549872950926</TD>
+    <TD>-0.0724450564514083</TD>
+    <TD>0.06833450127049073</TD>
+    <TD>0.011745056451408296</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.49</TD>
+    <TD>0.38</TD>
+    <TD>B</TD>
+    <TD>cfht</TD>
+    <TD>PUEO</TD>
+    <TD>Kprime       #6308</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 10:50:00</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454307.6879892363</TD>
+    <TD>2007-07-26T04:30:42.270</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.0801</TD>
+    <TD>-0.1326</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.07264461979478187</TD>
+    <TD>-0.11341990818008706</TD>
+    <TD>-0.007455380205218132</TD>
+    <TD>-0.01918009181991294</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>7.0</TD>
+    <TD>0.56</TD>
+    <TD>B</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:18:51</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2454308.620260764</TD>
+    <TD>2007-07-27T02:53:10.530</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3116</TD>
+    <TD>-0.261</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.3006528756747897</TD>
+    <TD>-0.2536694090381272</TD>
+    <TD>0.010947124325210278</TD>
+    <TD>-0.007330590961872829</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>4.86</TD>
+    <TD>0.04</TD>
+    <TD>B</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:33:41</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455077.0735126156</TD>
+    <TD>2009-09-02T13:45:51.490</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.2634</TD>
+    <TD>-0.2815</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.25655116784360876</TD>
+    <TD>-0.27382563508665886</TD>
+    <TD>-0.00684883215639126</TD>
+    <TD>-0.007674364913341114</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.64</TD>
+    <TD>0.03</TD>
+    <TD>B</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:34:22</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455077.0767082176</TD>
+    <TD>2009-09-02T13:50:27.590</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.2644</TD>
+    <TD>-0.2821</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.2575730745400993</TD>
+    <TD>-0.27301060647154696</TD>
+    <TD>-0.006826925459900712</TD>
+    <TD>-0.00908939352845306</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.64</TD>
+    <TD>0.04</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>J</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:34:32</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455077.078741667</TD>
+    <TD>2009-09-02T13:53:23.280</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.2643</TD>
+    <TD>-0.2734</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.2582201805438727</TD>
+    <TD>-0.27248858111186125</TD>
+    <TD>-0.006079819456127289</TD>
+    <TD>-9.114188881387264E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.81</TD>
+    <TD>0.06</TD>
+    <TD>B</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>PK50_1.5 + FeII</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:35:17</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455077.080224537</TD>
+    <TD>2009-09-02T13:55:31.400</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.2658</TD>
+    <TD>-0.2777</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.2586905211160023</TD>
+    <TD>-0.27210623678278806</TD>
+    <TD>-0.007109478883997655</TD>
+    <TD>-0.0055937632172119445</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.85</TD>
+    <TD>0.03</TD>
+    <TD>B</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>PK50_1.5 + FeII</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:44:16</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455077.0977396993</TD>
+    <TD>2009-09-02T14:20:44.710</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.2592</TD>
+    <TD>-0.2627</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.2641460078656788</TD>
+    <TD>-0.2674848200022067</TD>
+    <TD>0.0049460078656788364</TD>
+    <TD>0.004784820002206702</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.53</TD>
+    <TD>0.43</TD>
+    <TD>C</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>J</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-13 15:45:14</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455106.096105324</TD>
+    <TD>2009-10-01T14:18:23.500</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.334</TD>
+    <TD>-0.288</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.32616277188758297</TD>
+    <TD>-0.2767036143752635</TD>
+    <TD>-0.00783722811241705</TD>
+    <TD>-0.011296385624736505</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.65</TD>
+    <TD>0.03</TD>
+    <TD>A+</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 14:52:26</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455159.7032494214</TD>
+    <TD>2009-11-24T04:52:40.750</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.2891</TD>
+    <TD>-0.3604</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.27785204373183087</TD>
+    <TD>-0.3423281064974302</TD>
+    <TD>-0.011247956268169157</TD>
+    <TD>-0.018071893502569825</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.44</TD>
+    <TD>0.01</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:42:40</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455160.733341551</TD>
+    <TD>2009-11-25T05:36:00.710</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.3181</TD>
+    <TD>0.1916</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.3073669252056568</TD>
+    <TD>0.18414071453033184</TD>
+    <TD>-0.010733074794343211</TD>
+    <TD>0.007459285469668148</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.47</TD>
+    <TD>0.03</TD>
+    <TD>A+</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:42:02</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455257.717832639</TD>
+    <TD>2010-03-02T05:13:40.740</TD>
+    <TD>Pulcova</TD>
+    <TD>0.164</TD>
+    <TD>-0.0767</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.17398845533713844</TD>
+    <TD>-0.10607927825979425</TD>
+    <TD>-0.009988455337138435</TD>
+    <TD>0.02937927825979425</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.55</TD>
+    <TD>1.03</TD>
+    <TD>D</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:31:19</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455470.1323402775</TD>
+    <TD>2010-09-30T15:10:34.200</TD>
+    <TD>Pulcova</TD>
+    <TD>0.2108</TD>
+    <TD>0.0618</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.18119221733843163</TD>
+    <TD>0.04207316201251197</TD>
+    <TD>0.029607782661568355</TD>
+    <TD>0.019726837987488033</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>1.27</TD>
+    <TD>0.0</TD>
+    <TD>D</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:23:48</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455470.1358805555</TD>
+    <TD>2010-09-30T15:15:40.080</TD>
+    <TD>Pulcova</TD>
+    <TD>0.213</TD>
+    <TD>0.0763</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.18249431929887797</TD>
+    <TD>0.0426325213807872</TD>
+    <TD>0.03050568070112203</TD>
+    <TD>0.03366747861921281</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>-4.69</TD>
+    <TD>0.0</TD>
+    <TD>D</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:23:25</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455479.138280671</TD>
+    <TD>2010-10-09T15:19:07.450</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3144</TD>
+    <TD>0.1151</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.3061513794005573</TD>
+    <TD>0.11196787822615505</TD>
+    <TD>0.008248620599442702</TD>
+    <TD>0.003132121773844948</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.66</TD>
+    <TD>0.02</TD>
+    <TD>C</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-05 15:00:07</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455479.1400862266</TD>
+    <TD>2010-10-09T15:21:43.450</TD>
+    <TD>Pulcova</TD>
+    <TD>0.3117</TD>
+    <TD>0.1137</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.3059386583070797</TD>
+    <TD>0.1120027341004757</TD>
+    <TD>0.005761341692920252</TD>
+    <TD>0.0016972658995242917</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.55</TD>
+    <TD>0.03</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:45:42</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455479.143198264</TD>
+    <TD>2010-10-09T15:26:12.330</TD>
+    <TD>Pulcova</TD>
+    <TD>0.315</TD>
+    <TD>0.1156</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.30556664718236043</TD>
+    <TD>0.11206088096299535</TD>
+    <TD>0.009433352817639573</TD>
+    <TD>0.0035391190370046427</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.61</TD>
+    <TD>0.05</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:46:12</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455604.840923611</TD>
+    <TD>2011-02-12T08:10:55.800</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.5195</TD>
+    <TD>-0.1422</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.5062643912291239</TD>
+    <TD>-0.14722792666174664</TD>
+    <TD>-0.01323560877087604</TD>
+    <TD>0.005027926661746646</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.11</TD>
+    <TD>0.06</TD>
+    <TD>C</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-03-03 11:30:06</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455604.844230903</TD>
+    <TD>2011-02-12T08:15:41.550</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.5278</TD>
+    <TD>-0.1595</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.5065585718127033</TD>
+    <TD>-0.1479583970729993</TD>
+    <TD>-0.021241428187296796</TD>
+    <TD>-0.01154160292700071</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.81</TD>
+    <TD>0.08</TD>
+    <TD>A</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:49:07</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455666.7427916666</TD>
+    <TD>2011-04-15T05:49:37.200</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.3671</TD>
+    <TD>-0.0981</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.3733429797868745</TD>
+    <TD>-0.10303719481131096</TD>
+    <TD>0.006242979786874492</TD>
+    <TD>0.004937194811310955</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.55</TD>
+    <TD>0.13</TD>
+    <TD>B</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:49:42</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455666.74481713</TD>
+    <TD>2011-04-15T05:52:32.200</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.3758</TD>
+    <TD>-0.114</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.37359951686380355</TD>
+    <TD>-0.10344229353020624</TD>
+    <TD>-0.002200483136196474</TD>
+    <TD>-0.01055770646979376</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.76</TD>
+    <TD>0.3</TD>
+    <TD>B</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:50:12</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455666.748199074</TD>
+    <TD>2011-04-15T05:57:24.400</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.38</TD>
+    <TD>-0.1175</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>-0.37401992028218334</TD>
+    <TD>-0.10411648893587308</TD>
+    <TD>-0.0059800797178166665</TD>
+    <TD>-0.013383511064126913</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.79</TD>
+    <TD>0.31</TD>
+    <TD>B</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:50:24</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455669.7217210648</TD>
+    <TD>2011-04-18T05:19:16.700</TD>
+    <TD>Pulcova</TD>
+    <TD>0.1364</TD>
+    <TD>0.1682</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.14445814640973106</TD>
+    <TD>0.1473826102736037</TD>
+    <TD>-0.00805814640973107</TD>
+    <TD>0.020817389726396296</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.2</TD>
+    <TD>0.37</TD>
+    <TD>C</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-05 14:50:29</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2455669.724717361</TD>
+    <TD>2011-04-18T05:23:35.580</TD>
+    <TD>Pulcova</TD>
+    <TD>0.1305</TD>
+    <TD>0.1717</TD>
+    <TD>0.0219</TD>
+    <TD>0.0219</TD>
+    <TD>0.14286684528709684</TD>
+    <TD>0.14703070214869027</TD>
+    <TD>-0.012366845287096834</TD>
+    <TD>0.024669297851309724</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>4.95</TD>
+    <TD>0.0</TD>
+    <TD>C</TD>
+    <TD>gem-n</TD>
+    <TD>NIRI</TD>
+    <TD>Kprime_G0206</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-05 14:48:17</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2456048.745900463</TD>
+    <TD>2012-05-01T05:54:05.800</TD>
+    <TD>Pulcova</TD>
+    <TD>0.1408</TD>
+    <TD>0.3436</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.14233299593144114</TD>
+    <TD>0.32472285106727045</TD>
+    <TD>-0.0015329959314411279</TD>
+    <TD>0.01887714893272957</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>4.76</TD>
+    <TD>0.05</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:53:30</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2456446.895628241</TD>
+    <TD>2013-06-03T09:29:42.280</TD>
+    <TD>Pulcova</TD>
+    <TD>0.2804</TD>
+    <TD>-0.0821</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.27458533573088534</TD>
+    <TD>-0.08163581398546631</TD>
+    <TD>0.005814664269114644</TD>
+    <TD>-4.64186014533699E-4</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>5.13</TD>
+    <TD>0.01</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-05 14:57:02</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2456447.867065162</TD>
+    <TD>2013-06-04T08:48:34.430</TD>
+    <TD>Pulcova</TD>
+    <TD>0.2614</TD>
+    <TD>-0.1101</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>0.2592068081898049</TD>
+    <TD>-0.10904250016427999</TD>
+    <TD>0.0021931918101951164</TD>
+    <TD>-0.0010574998357200105</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>4.87</TD>
+    <TD>0.16</TD>
+    <TD>A</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-05 14:57:30</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2456448.9076372683</TD>
+    <TD>2013-06-05T09:46:59.860</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.2579</TD>
+    <TD>0.0583</TD>
+    <TD>0.0133</TD>
+    <TD>0.0133</TD>
+    <TD>-0.25065594555172915</TD>
+    <TD>0.07206074491110179</TD>
+    <TD>-0.007244054448270865</TD>
+    <TD>-0.01376074491110179</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>309</TD>
+    <TD>psfimcce</TD>
+    <TD>5.46</TD>
+    <TD>0.05</TD>
+    <TD>C</TD>
+    <TD>eso-vlt</TD>
+    <TD>NACO</TD>
+    <TD>Ks</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-04-05 15:04:13</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2456530.83365</TD>
+    <TD>2013-08-26T08:00:27.360</TD>
+    <TD>Pulcova</TD>
+    <TD>0.1553</TD>
+    <TD>-0.072</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.15351542859408807</TD>
+    <TD>-0.07348037201522191</TD>
+    <TD>0.0017845714059119278</TD>
+    <TD>0.0014803720152219146</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.22</TD>
+    <TD>0.12</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:53:53</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2456530.8358310186</TD>
+    <TD>2013-08-26T08:03:35.800</TD>
+    <TD>Pulcova</TD>
+    <TD>0.1499</TD>
+    <TD>-0.0764</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.15251433568937087</TD>
+    <TD>-0.07298874114163327</TD>
+    <TD>-0.0026143356893708614</TD>
+    <TD>-0.0034112588583667253</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.33</TD>
+    <TD>0.78</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-01-17 13:54:15</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2456530.8392017363</TD>
+    <TD>2013-08-26T08:08:27.030</TD>
+    <TD>Pulcova</TD>
+    <TD>0.1601</TD>
+    <TD>-0.0783</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>0.15096392954263788</TD>
+    <TD>-0.07222738078002246</TD>
+    <TD>0.009136070457362117</TD>
+    <TD>-0.0060726192199775375</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.04</TD>
+    <TD>0.52</TD>
+    <TD>C</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>Kp</TD>
+    <TD>B. Carry</TD>
+    <TD>2023-01-24 17:08:36</TD>
+    <TD></TD>
+  </TR>
+  <TR>
+    <TD>2458737.783543287</TD>
+    <TD>2019-09-11T06:48:18.140</TD>
+    <TD>Pulcova</TD>
+    <TD>-0.1346</TD>
+    <TD>0.1523</TD>
+    <TD>0.01</TD>
+    <TD>0.01</TD>
+    <TD>-0.12354485141236592</TD>
+    <TD>0.1467786306053564</TD>
+    <TD>-0.011055148587634081</TD>
+    <TD>0.005521369394643594</TD>
+    <TD>UTC</TD>
+    <TD>3                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>1                               </TD>
+    <TD>568</TD>
+    <TD>psfimcce</TD>
+    <TD>5.16</TD>
+    <TD>0.19</TD>
+    <TD>A</TD>
+    <TD>keckii</TD>
+    <TD>NIRC2</TD>
+    <TD>H</TD>
+    <TD>K. Minker</TD>
+    <TD>2023-02-14 08:43:32</TD>
+    <TD></TD>
+  </TR>
+</TABLEDATA>
+</DATA>
+</TABLE>
+</RESOURCE>
+</VOTABLE>
